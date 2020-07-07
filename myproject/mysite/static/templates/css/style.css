@@ -1,0 +1,210 @@
+@import 'font.css';
+
+body{
+	font-family: 'Open Sans';
+}
+
+
+.container-header {
+   color: #fff;
+   text-align:center;
+   padding:180px 0;
+   background-size: cover;
+   background-position: 0 100%;
+   background-image: url("/static/img/header.png")
+}
+
+.header__title {
+	font-size: 55px;
+
+}
+.header__text {
+	font-size: 20px;
+	margin-bottom: 100px;
+
+}
+
+.button {
+	text-transform: uppercase;
+	padding: 10px 25px;
+	margin: 0 10px;
+	color: #fff;
+	transition: 0.3s;
+	background: #00897b;
+	border:2px solid #00897b;
+	cursor: pointer;
+	border-radius: 5px;
+
+}
+
+.button:hover{
+	background: transparent;
+	border: 2px solid #fff;
+}
+
+
+/*О нас*/
+.about {
+	color: black;
+	background-color: #fff;
+	text-align:center;
+	padding-top:120px;
+	padding-bottom: 125px;
+}
+
+.about__title {
+	font-size: 30px;
+	font-weight: bold;
+
+}
+
+.about__text {
+	color: #212121;
+	font-size: 15px;
+	margin-bottom: 110px;
+}
+.about__h3 {
+	margin-top: 30px;
+	margin-bottom: 20px;
+	font-size: 20px;
+	font-family: 'Open Sans Semibold';
+}
+
+
+/*сервис*/
+.services {
+	color: black;
+	background-color: #e4fdf9;
+	text-align:center;
+	padding-top:165px;
+	padding-bottom: 125px;
+}
+
+.service__title {
+	font-size: 30px;
+	font-weight: bold;
+
+}
+
+.service__text {
+	color: #212121;
+	font-size: 15px;
+	margin-bottom: 110px;
+}
+.service__h3 {
+	margin-top: 30px;
+	margin-bottom: 20px;
+	font-size: 20px;
+	font-family: 'Open Sans Semibold';
+}
+
+
+
+.our_card {
+  background-color: #fff;
+  padding: 50px 40px 40px;
+  transition: 0.3s;
+  margin-bottom: 30px;
+
+}
+
+.our_card:hover{
+	background-color: #00897b;
+	color: #fff;
+	box-shadow: 0px 10px 12px -3px rgba(0, 0, 0, 0.26);
+}
+
+
+.our_card:hover .icon{
+	color: #fff;
+
+}
+
+
+.our_card:hover .button-services{
+    border: 2px solid #fff;
+    color: #fff;
+	}
+
+.icon {
+   font-size: 60px;
+   color: black;
+   transition: 0.3s;
+}
+
+.button-services {
+   color:black;
+   border: 2px solid black;
+   background: transparent;
+   padding:12px 12px;
+   border-radius: 3px;
+   transition: 0.3s;
+   font-family: 'Open Sans Semibold';
+}
+
+.button-services:hover{
+	cursor: pointer;
+}
+
+/*портфолио*/
+.portfolio {
+	color: black;
+	background-color: #fff;
+	text-align:center;
+	padding-top:120px;
+	padding-bottom: 135px;
+}
+.service__title {
+	font-size: 30px;
+	font-weight: bold;
+
+}
+
+.portfolio__text {
+	color: #212121;
+	font-size: 15px;
+	margin-bottom: 110px;
+}
+.portfolio__h3 {
+	margin-top: 30px;
+	margin-bottom: 20px;
+	font-size: 20px;
+	font-family: 'Open Sans Semibold';
+}
+.portfolio button:hover,
+.focused {
+   color:#000;
+   border:2px solid #00897b;
+   background: transparent;
+
+}
+
+.portfolio img {
+	margin-bottom: 30px;
+}
+
+.filter {
+  padding: 120px 0;
+}
+
+
+
+div[filter]:hover img {
+	filter: brightness(50%);
+	transition: 0.3s;
+}
+
+.text {
+  display: none;
+}
+
+div[filter]:hover .text {
+	display: block;
+	width: 100%;
+	color: #fff;
+	position: absolute;
+	top: 40%;
+	left: 0;
+	z-index: 3;
+	text-align: center;
+}

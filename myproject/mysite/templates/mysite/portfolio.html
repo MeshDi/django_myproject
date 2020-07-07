@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'templates/css/style.css' %}">
+     <script src="https://kit.fontawesome.com/9abda80b04.js" crossorigin="anonymous"></script>
+
+    <title>Портфолио</title>
+</head>
+<body>
+
+{% include 'mysite/header.html' %}
+
+<section class="portfolio">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-8">
+            <h2 class="portfolio__title">Latest work</h2>
+            <p class="portfolio__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, nisi, vel earum voluptas ab, exercitationem quasi in deleniti voluptates deserunt itaque quaerat, tempora commodi incidunt ad. Quas adipisci ut quibusdam! </p>
+            <button  val="on" class="button"  filter="all">All</button>
+            <button  val="off" class="button" filter="wd">Web DESIGN</button>
+            <button  val="off" class="button" filter="ud">UI/UX DESIGN</button>
+            <button  val="off" class="button" filter="moc">MOCKUPS</button>
+        </div>
+        </div>
+          <div class="row filter">
+          <div filter="wd" class="col-xl-4">
+            <img src="{% static 'img/item1.png' %}" alt="">
+            <div class="text">
+              <h5>Hand Watch</h5>
+              <p>Web design</p>
+
+          </div>
+        </div>
+          <div filter="moc" class="col-xl-4">
+            <img src="{% static 'img/item2.png' %}" alt="">
+            <div class="text">
+              <h5>One day Pass</h5>
+              <p>Mockups</p>
+
+          </div>
+        </div>
+          <div filter="wd" class="col-xl-4">
+            <img src="{% static 'img/item3.png' %}" alt="">
+           <div class="text">
+              <h5>Modal T-shirt</h5>
+              <p>Web design</p>
+
+          </div>
+         </div>
+          <div filter="moc" class="col-xl-4">
+            <img src="{% static 'img/item4.png' %}" alt="">
+         <div class="text">
+              <h5>Flask</h5>
+              <p>Mockups</p>
+
+          </div>
+        </div>
+          <div filter="ud" class="col-xl-4">
+            <img src="{% static 'img/item5.png' %}" alt="">
+          <div class="text">
+              <h5>Eplemost</h5>
+              <p>Ui/UX Design</p>
+
+          </div>
+        </div>
+          <div filter="ud" class="col-xl-4">
+            <img src="{% static 'img/item6.png' %}" alt="">
+          <div class="text">
+              <h5>The kitchens</h5>
+              <p>Ui/UX Design</p>
+
+          </div>
+        </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-12">
+          <button  val="on" class="button" filter="all">View all
+        </div>
+        </button>
+      </div>
+    </div>
+   </section>
+{% include 'mysite/footer.html'%}
+</body>
+</html>

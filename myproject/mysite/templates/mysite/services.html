@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'templates/css/style.css' %}">
+     <script src="https://kit.fontawesome.com/9abda80b04.js" crossorigin="anonymous"></script>
+
+    <title>Сервисы</title>
+</head>
+<body>
+
+{% include 'mysite/header.html' %}
+
+<section class="services">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-8">
+            <h2 class="service__title">Our services</h2>
+            <p class="service__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, nisi, vel earum voluptas ab, exercitationem quasi in deleniti voluptates deserunt itaque quaerat, tempora commodi incidunt ad. Quas adipisci ut quibusdam! </p>
+        </div>
+        </div>
+
+          <div class="row justify-content-center">
+          <div class="col-xl-4">
+            <div class="our_card">
+           <i class="fas fa-search icon"></i>
+             <h3 class="service__h3">Research</h3>
+            <p class="service__textmini">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, perspiciatis tenetur nisi magni. Ipsum, accusantium.</p>
+            <button class="button-services">READ MORE</button>
+          </div>
+        </div>
+              <div class="col-xl-4">
+             <div class="our_card">
+            <i class="fas fa-images icon"></i>
+             <h3 class="service__h3">Portfolio</h3>
+            <p class="service__textmini">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, perspiciatis tenetur nisi magni. Ipsum, accusantium.</p>
+            <button class="button-services">READ MORE</button>
+          </div>
+          </div>
+          <div class="col-xl-4">
+             <div class="our_card">
+            <i class="fas fa-question icon"></i>
+             <h3 class="service__h3">Support</h3>
+            <p class="service__textmini">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, perspiciatis tenetur nisi magni. Ipsum, accusantium.</p>
+            <button class="button-services">READ MORE</button>
+          </div>
+          </div>
+           <div class="col-xl-4">
+             <div class="our_card">
+            <i class="fas fa-question icon"></i>
+             <h3 class="service__h3">Documentation</h3>
+            <p class="service__textmini">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, perspiciatis tenetur nisi magni. Ipsum, accusantium.</p>
+            <button class="button-services">READ MORE</button>
+          </div>
+          </div>
+           <div class="col-xl-4">
+             <div class="our_card">
+            <i class="fas fa-code icon"></i>
+             <h3 class="service__h3">Development</h3>
+            <p class="service__textmini">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, perspiciatis tenetur nisi magni. Ipsum, accusantium.</p>
+            <button class="button-services">READ MORE</button>
+          </div>
+          </div>
+           <div class="col-xl-4">
+             <div class="our_card">
+            <i class="fas fa-pencil-alt icon"></i>
+             <h3 class="service__h3">Design</h3>
+            <p class="service__textmini">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, perspiciatis tenetur nisi magni. Ipsum, accusantium.</p>
+            <button class="button-services">READ MORE</button>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+{% include 'mysite/footer.html'%}
+</body>
+</html>

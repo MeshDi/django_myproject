@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'templates/css/style.css' %}">
+     <script src="https://kit.fontawesome.com/9abda80b04.js" crossorigin="anonymous"></script>
+
+    <title>Главная</title>
+</head>
+<body>
+
+{% include 'mysite/header.html' %}
+
+<div class="container-header">
+    <div class="row">
+        <div class="col-xl-12 ">
+            <h1 class="header__title">Web development project</h1>
+            <p class="header__text">Very suitable to support all web development project</p>
+            <a href="{% url 'Services' %}"><button class="button">Our services</button></a>
+            <a href=#> <button class="button">Hire is now</button></a>
+        </div>
+    </div>
+</div>
+
+{% include 'mysite/footer.html'%}
+
+</body>
+</html>

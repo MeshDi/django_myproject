@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'templates/css/style.css' %}">
+     <script src="https://kit.fontawesome.com/9abda80b04.js" crossorigin="anonymous"></script>
+
+    <title>О нас</title>
+</head>
+<body>
+
+{% include 'mysite/header.html' %}
+
+<section class="about">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-8">
+            <h2 class="about__title">About us</h2>
+            <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, nisi, vel earum voluptas ab, exercitationem quasi in deleniti voluptates deserunt itaque quaerat, tempora commodi incidunt ad. Quas adipisci ut quibusdam! </p>
+        </div>
+        </div>
+          <div class="row justify-content-around">
+          <div class="col-xl-3">
+            <img src="{% static 'img/internet.png' %}" alt="internet">
+            <h3 class="about__h3">Awsome Icons</h3>
+            <p class="about__textmini">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat dolore quidem, illum odio explicabo fugiat.</p>
+          </div>
+          <div class="col-xl-3">
+            <img src="{% static 'img/transfer.png' %}" alt="trensfer">
+            <h3 class="h3">One Page</h3>
+            <p class="about__textmini">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste aut quidem veritatis tenetur ex placeat.</p>
+          </div>
+          <div class="col-xl-3">
+            <img src="{% static 'img/head.png' %}" alt="head">
+            <h3 class="h3">Fully Responsive</h3>
+            <p class="about__textmini">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, perspiciatis tenetur nisi magni. Ipsum, accusantium.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+{% include 'mysite/footer.html'%}
+</body>
+</html>
