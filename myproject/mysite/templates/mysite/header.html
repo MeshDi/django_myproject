@@ -1,9 +1,11 @@
 <!--Навбар-->
+{% load static %}
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-    <a class="navbar-brand" href="{% url 'Home' %}">Myproject</a>
+    <a class="navbar-brand" href="{% url 'Home' %}">
+        <img src="{% static 'img/coin.png' %}" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+        Myproject</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -24,7 +26,7 @@
                 <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModal">Контакты</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModal1">Авторизация</a>
+                <a class="nav-link" href="{% url 'login' %}"> <!--data-toggle="modal" data-target="#exampleModal1"-->Авторизация</a>
             </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
@@ -58,54 +60,55 @@
         </div>
     </div>
 </div>
-<div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModal1"
-     aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-
 <!--        Авторизация-->
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel1">Авторизация
-                </h5>
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="container-fluid">
-                    <form>
-                        <div class="form-row">
-                            <div class="col">
-                                <div class="form-group">
-                                    <label for="exampleInputEmail">Email address
-                                    </label>
-                                    <input type="email" class="form-control" id="exampleInputEmail"
-                                           aria-describdby="emailHelp" placeholder="Email" required>
-                                    <small id="emailHelp" class="form-text text-muted">Enter your email </small>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="form-group">
-                                    <label for="exampleInputPass">Password
-                                    </label>
-                                    <input type="password" class="form-control" id="exampleInputPass"
-                                           placeholder="Password" required>
-                                    <small id="passHelp" class="form-text text-muted">Enter your password </small>
-                                </div>
-                            </div>
-                        </div>
+<!--<div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModal1"-->
+<!--     aria-hidden="true">-->
+<!--    <div class="modal-dialog" role="document">-->
+<!--        <div class="modal-content">-->
 
-                        <div class="form-check">
-                            <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input"> Запомнить пароль
-                            </label>
-                        </div>
-                        <button type="submit" class="btn btn-primary mt-2">Отправить</button>
 
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<!--            <div class="modal-header">-->
+<!--                <h5 class="modal-title" id="exampleModalLabel1">Авторизация-->
+<!--                </h5>-->
+<!--                <button class="close" type="button" data-dismiss="modal" aria-label="Close">-->
+<!--                    <span aria-hidden="true">&times;</span>-->
+<!--                </button>-->
+<!--            </div>-->
+<!--            <div class="modal-body">-->
+<!--                <div class="container-fluid">-->
+<!--                    <form method="post">-->
+<!--                        <div class="form-row">-->
+<!--                            <div class="col">-->
+<!--                                <div class="form-group">-->
+<!--                                    <label for="exampleInputEmail">Email address-->
+<!--                                    </label>-->
+<!--                                    <input type="email" class="form-control" id="exampleInputEmail"-->
+<!--                                           aria-describdby="emailHelp" placeholder="Email" required>-->
+<!--                                    <small id="emailHelp" class="form-text text-muted">Enter your email </small>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="col">-->
+<!--                                <div class="form-group">-->
+<!--                                    <label for="exampleInputPass">Password-->
+<!--                                    </label>-->
+<!--                                    <input type="password" class="form-control" id="exampleInputPass"-->
+<!--                                           placeholder="Password" required>-->
+<!--                                    <small id="passHelp" class="form-text text-muted">Enter your password </small>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+
+<!--                        <div class="form-check">-->
+<!--                            <label class="form-check-label">-->
+<!--                                <input type="checkbox" class="form-check-input"> Запомнить пароль-->
+<!--                            </label>-->
+<!--                        </div>-->
+<!--                        <button type="submit" class="btn btn-primary mt-2">Отправить</button>-->
+<!--                    </form>-->
+
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
 

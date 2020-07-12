@@ -1,6 +1,7 @@
+
 from django.shortcuts import render
 from django.http import HttpResponseNotFound
-from . import models
+from . import models,forms
 
 
 # Create your views here.
@@ -23,14 +24,22 @@ def index(request):
     context['products'] = products
     return render(request, 'mysite/index.html', context)
 
+
 def about(request):
     return render(request, 'mysite/about.html')
+
 
 def services(request):
     return render(request, 'mysite/services.html')
 
+
 def portfolio(request):
     return render(request, 'mysite/portfolio.html')
+
+
+def login(request):
+     # context = {'form':forms.LoginForm()}
+     return render(request, 'mysite/login.html')
 
 
 

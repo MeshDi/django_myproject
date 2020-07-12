@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'templates/css/style.css' %}">
+     <script src="https://kit.fontawesome.com/9abda80b04.js" crossorigin="anonymous"></script>
+
+    <title>Главная</title>
+</head>
+<body>
+{% include 'mysite/header.html' %}
+ <div class="modal-header">
+                <h5 class="modal-title">Авторизация
+                </h5>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <form action="/login/" method="post">
+<!--                        {{form.username}}-->
+<!--                        {{form.password}}-->
+<!--                        {% csrf_token %}-->
+
+
+                        <div class="form-row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail"> Email address
+                                    </label>
+                                    <input type="email" class="form-control" id="exampleInputEmail"
+                                             aria-describdby="emailHelp" placeholder="Email" required>
+                                    <small id="emailHelp" class="form-text text-muted">Enter your email </small>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="exampleInputPass">Password
+                                    </label>
+                                    <input type="password" class="form-control" id="exampleInputPass"
+                                           placeholder="Password" required>
+                                    <small id="passHelp" class="form-text text-muted">Enter your password </small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input"> Запомнить пароль
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary mt-2">Войти</button>
+                </div>
+            </div>
+</form>
+{% include 'mysite/footer.html'%}
+</body>
+</html>
