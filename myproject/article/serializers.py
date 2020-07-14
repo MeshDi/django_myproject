@@ -1,14 +1,18 @@
+
 from rest_framework import serializers
-from.models import Article
+
+from .models import Article
 
 
-class ArticleSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Article
-        fields = ('id', 'title', 'description', 'body', 'author_id')
+class ArticleSerializer(serializers.Serializer):
+    id = serializers.IntegerField()
+    title = serializers.CharField(max_length=120)
+    description = serializers.CharField()
+    body = serializers.CharField()
+    author_id = serializers.IntegerField()
 
-        def update(self, instance, validated_data):
-         instance.author_id = validated_data.get('author_id', instance.author_id)
+    def create(self, validated_data):
+        return Article.objects.create(**validated_data)
 
-         instance.save()
-         return instance
+
+
